@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Digital Journal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Digital Journal</h1>
+            <div id="userInfo" class="hidden">
+                <span id="welcomeMessage"></span>
+            </div>
+            <div id="userSetup" class="setup-form">
+                <input type="text" id="userName" placeholder="Enter your name">
+                <button onclick="setupUser()">Start Journaling</button>
+            </div>
+        </header>
+
+        <main>
+            <div id="newEntry" class="entry-form hidden">
+                <h2>New Entry</h2>
+                <input type="date" id="entryDate">
+                <textarea id="entryContent" placeholder="Write your thoughts..."></textarea>
+                <input type="file" id="entryImage" accept="image/*">
+                <button onclick="saveEntry()">Save Entry</button>
+            </div>
+
+            <div id="entriesList" class="entries-container">
+                <!-- Entries will be displayed here -->
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
