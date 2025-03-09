@@ -2,7 +2,7 @@ Digital Journal is a simple frontend web application that allows users to write 
 
 Features:
 
-1.Write and save journal entries
+ 1.Write and save journal entries
 
 2. Upload and display images alongside thoughts
   
